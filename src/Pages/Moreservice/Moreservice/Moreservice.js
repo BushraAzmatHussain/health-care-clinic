@@ -1,24 +1,27 @@
 import React, { useEffect, useState } from 'react';
+import './Moreservice.css';
 import { useParams } from 'react-router';
 
 const Moreservice = () => {
-   
-    const [detail ,setDetail] = useState([]);
     const {serviceId}= useParams();
-    useEffect (()=>{
-        fetch('/servicedetail.json')
-        .then(res => res.json())
-        .then(data => setDetail(data));
-    },[]);
-    const clickedId = detail.find(
-        (service) => service.id === parseInt(serviceId) 
-    );
-    console.log(clickedId?.detail);
+    const [detail ,setDetail] = useState([]);
+
+    useEffect(( ) => {
+        fetch('/services.json')
+            .then(response => response.json())
+            .then(data => {
+                const item = data?.find(item => parseInt(item.id) === parseInt(serviceId));
+                setDetail(item);
+            });
+    }, []);
+
     return (
-        <div>
-            <p>{clickedId?.detail}</p>
-            <h1>More Information</h1>
+        <div className="background">
             
+            <h2 className="fw-bold p-5">{detail?.name}</h2>
+            <img src={detail?.img} alt="" />
+            <p className="fw-bold" >{detail?.description}</p>
+            <p className="fw-bold">{detail?.details}</p>
             
         </div>
     );
