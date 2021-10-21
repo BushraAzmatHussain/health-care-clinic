@@ -6,6 +6,7 @@ import About from './Pages/About/About';
 import Footer from './Pages/Footer/Footer';
 import Home from './Pages/Home/Home/Home';
 import Spacialist from './Pages/Home/Services/Service/Spacialist/Spacialist';
+import Spacialists from './Pages/Home/Services/Service/Spacialists/Spacialists';
 import Login from './Pages/Login/Login/Login';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Moreservice from './Pages/Moreservice/Moreservice/Moreservice';
@@ -33,7 +34,7 @@ function App() {
             <About></About>
           </PrivateRoute>
           <PrivateRoute path="/spacialists">
-            <Spacialist></Spacialist>
+            <Spacialists></Spacialists>
           </PrivateRoute>
           
           <Route path="/footer">

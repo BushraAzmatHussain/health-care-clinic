@@ -1,6 +1,6 @@
 # ENT CARE CLINIC
 
-This project was bootstrapped with [ENT CARE CLINIC](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [ENT CARE CLINIC](https://ent-care-clinic.web.app).
 
 This is a website which promises to provide specialist care and treatement for ear, nose and throat by drawing from the 10 plus years of experience .
 
