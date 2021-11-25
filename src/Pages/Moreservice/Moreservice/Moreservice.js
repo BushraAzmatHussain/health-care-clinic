@@ -21,7 +21,7 @@ const Moreservice = () => {
             <h2 className="fw-bold p-5">{detail?.name}</h2>
             <img src={detail?.img} alt="" />
             <p className="fw-bold" >{detail?.description}</p>
-            <p className="fw-bold">{detail?.details}</p>
+            {/* <p className="fw-bold">{detail?.details}</p> */}
             
         </div>
     );
