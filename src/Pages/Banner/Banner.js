@@ -18,7 +18,7 @@ const Banner = () => {
     />
     <Carousel.Caption>
       <h3 className="fw-bold">Welcome to ENT Care Clinic</h3>
-      <p className="fw-bold">Our aim is to provide specialist care by drawing from the 10 plus years of experience . test</p>
+      <p className="fw-bold">Our aim is to provide specialist care by drawing from the 10 plus years of experience .</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
